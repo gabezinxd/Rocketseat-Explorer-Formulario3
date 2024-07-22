@@ -23,7 +23,7 @@ body::before {
 header {
   padding-top: 107px;
   width: 750px;
-  margin: auto;
+  margin: 0 auto 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,12 +38,6 @@ header legend {
 header p {
   color: white;
   margin-bottom: 23px;
-}
-
-#stars {
-  display: block;
-  margin: auto;
-  margin-bottom: 32px;
 }
 
 legend {
@@ -98,6 +92,7 @@ input, textarea, select {
   border-radius: 8px;
   height: 55px;
   margin-top: 8px;
+  padding: 10px;
 }
 
 .wrapper {
@@ -135,7 +130,6 @@ textarea {
   max-height: 300px;
   max-width: 622px;
   min-width: 622px;
-  padding: 10px;
   font-size: 17px;
   font-family: Poppins;
 }
