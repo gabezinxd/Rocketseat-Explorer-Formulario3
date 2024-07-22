@@ -173,7 +173,7 @@ textarea {
 }
 
 .checkbox-wrapper input:focus + label::before {
-  border: 2px solid black;
+  outline: 2px solid #e59700;
 }
 
 #next-mentory legend {
