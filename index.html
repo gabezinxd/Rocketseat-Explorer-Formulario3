@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Staatliches&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Avançado</title>
+</head>
+<body>
+
+  <header>
+    <legend>Avalie a sua mentoria</legend>
+    <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+  </header>
+
+  <img id="stars" src="./img/stars.svg" alt="Estrelas de avaliação">
+
+  <div id="titulo">
+    <legend>Informações pessoais</legend>
+  </div>
+
+  <form id="myform">
+    <div class="wrapper">
+      <div class="names">
+
+        <div class="inputs">
+          <label for="fname">Nome</label>
+          <input type="name" name="fname" id="fname">
+        </div>
+          
+        <div class="inputs">
+          <label for="fname">Sobrenome</label>
+          <input type="text" name="lname" id="lname">
+        </div>
+      </div>
+
+      <label for="email">Email <span>(digite um email válido)</span></label>
+      <input type="email" name="email" id="email">
+    </div>
+
+    <legend>Informações do Mentor</legend>
+    <div class="line"></div>
+
+    <div class="wrapper">
+      <label for="mentors">Selecione quem foi o seu mentor</label>
+      <select name="mentors" id="mentors">
+        <option value=""></option>
+        <option value="name">Neymar</option>
+        <option value="name">Ronaldinho</option>
+        <option value="name">Cássio</option>
+        <option value="name">Gabigol</option>
+      </select>
+
+      <label for="feedback">Feedback sobre o mentor</label>
+      <textarea name="feedback" id="feedback"></textarea>
+    </div>
+
+    <div class="checkbox-wrapper">
+      <input type="checkbox" name="doubts" id="doubts">
+      <label for="doubts">
+        Todas as minhas dúvidas foram esclarecidas durante a mentoria.
+      </label>
+    </div>
+
+    <div id="next-mentory">
+      <legend>Agendando próxima mentoria</legend>
+      <div class="line"></div>
+    </div>
+
+    <div class="wrapper">
+      <div class="dates">
+
+        <div class="inputs">
+          <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+          <input type="date" name="date" id="date">
+        </div>
+
+        <div class="inputs">
+          <label for="from">Das</label>
+          <input type="time" name="from" id="from">
+        </div>
+
+        <div class="inputs">
+          <label for="to">Até</label>
+          <input type="time" name="to" id="to">
+        </div>
+
+      </div>
+    </div>
+
+    <input type="submit" form="myform" id="button" value="Salvar">
+  </form>
+  
+</body>
+</html>
