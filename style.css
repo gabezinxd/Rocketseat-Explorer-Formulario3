@@ -52,15 +52,14 @@ legend {
   background-color: #F67669;
   height: 144px;
   width: 750px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
   margin: auto;
   border-radius: 20px 20px 0 0;
 }
 
 #titulo legend {
   color: white;
+  place-self: center;
 }
 
 form {
